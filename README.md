@@ -1,59 +1,206 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PharmaGarde
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+PharmaGarde est une application web et mobile qui permet de localiser les pharmacies ouvertes ou de garde et de vérifier la disponibilité d'un médicament avant de se déplacer. Développée pour le contexte du Togo, optimisée pour l'usage en urgence et les connexions faibles.
 
-## About Laravel
+## Stack Technique
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Backend** : Laravel 12, PHP 8.3, API REST, Laravel Sanctum
+- **Base de données** : MySQL ou PostgreSQL (index sur latitude, longitude, nom de médicament)
+- **Frontend Web** : Vue.js 3 (Composition API) + Inertia.js + Tailwind CSS, Vite
+- **Carte** : Leaflet + OpenStreetMap
+- **Cache** : Cache Laravel
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Rôles
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Visiteur** : Sans compte, peut rechercher des médicaments et pharmacies
+- **Utilisateur** : Peut créer des favoris et des réservations
+- **Pharmacien** : Peut gérer sa fiche pharmacie et son stock (après validation par l'admin)
+- **Administrateur** : Peut valider les pharmacies et gérer les signalements
 
-## Learning Laravel
+## Installation Locale
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Prérequis
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP 8.3 ou supérieur
+- Composer
+- Node.js et npm
+- MySQL ou PostgreSQL
 
-## Laravel Sponsors
+### Étapes
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/votre-username/pharmagarde.git
+cd pharmagarde
+```
 
-### Premium Partners
+2. Installer les dépendances PHP :
+```bash
+composer install
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+3. Installer les dépendances JavaScript :
+```bash
+npm install
+```
 
-## Contributing
+4. Configurer l'environnement :
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. Configurer la base de données dans le fichier `.env` :
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=pharmagarde
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-## Code of Conduct
+6. Exécuter les migrations et les seeders :
+```bash
+php artisan migrate --seed
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+7. Compiler les assets :
+```bash
+npm run build
+```
 
-## Security Vulnerabilities
+8. Démarrer le serveur de développement :
+```bash
+php artisan serve
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+L'application sera accessible sur `http://localhost:8000`.
 
-## License
+## Comptes de Test
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Les comptes suivants sont créés automatiquement lors du seeding :
+
+### Administrateur
+- **Email** : admin@pharmagarde.tg
+- **Mot de passe** : password
+- **Rôle** : admin
+
+### Utilisateur
+- **Email** : user@pharmagarde.tg
+- **Mot de passe** : password
+- **Rôle** : user
+
+### Pharmacien
+- **Email** : pharmacist@pharmagarde.tg
+- **Mot de passe** : password
+- **Rôle** : pharmacist
+- **Pharmacie** : Pharmacie Centrale Lomé (validée)
+
+## API Endpoints
+
+### Authentification
+
+- `POST /api/pharma/register` - Inscription d'un nouvel utilisateur
+- `POST /api/pharma/login` - Connexion
+- `POST /api/pharma/logout` - Déconnexion (nécessite authentification)
+- `GET /api/pharma/me` - Profil utilisateur (nécessite authentification)
+
+### Exemple d'utilisation
+
+```bash
+# Inscription
+curl -X POST http://localhost:8000/api/pharma/register \
+  -H "Content-Type: application/json" \
+  -d '{"name":"John Doe","email":"john@example.com","password":"password123","password_confirmation":"password123"}'
+
+# Connexion
+curl -X POST http://localhost:8000/api/pharma/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"john@example.com","password":"password123"}'
+```
+
+## Tests
+
+Exécuter les tests avec PHPUnit :
+
+```bash
+php artisan test
+```
+
+Les tests couvrent :
+- L'inscription et la connexion des utilisateurs
+- La validation des formulaires
+- Les middlewares de rôles
+- L'accès aux routes protégées
+
+## Déploiement
+
+### Render
+
+Le projet est configuré pour être déployé sur Render avec le fichier `render.yaml`.
+
+1. Connectez-vous sur [Render](https://render.com)
+2. Créez un nouveau service web
+3. Connectez votre dépôt GitHub
+4. Render détectera automatiquement le fichier `render.yaml`
+5. Déployez
+
+### Railway
+
+Le projet est configuré pour être déployé sur Railway avec le fichier `railway.toml`.
+
+1. Connectez-vous sur [Railway](https://railway.app)
+2. Créez un nouveau projet
+3. Connectez votre dépôt GitHub
+4. Railway détectera automatiquement le fichier `railway.toml`
+5. Déployez
+
+### Docker
+
+Le projet inclut un `Dockerfile` pour le déploiement avec Docker :
+
+```bash
+docker build -t pharmagarde .
+docker run -p 9000:9000 pharmagarde
+```
+
+## CI/CD
+
+Le projet utilise GitHub Actions pour les tests automatiques. Le workflow se trouve dans `.github/workflows/tests.yml`.
+
+Les tests s'exécutent automatiquement sur chaque push et pull request vers les branches `main` et `develop`.
+
+## Structure de la Base de Données
+
+### Tables principales
+
+- `users` - Utilisateurs avec rôles
+- `pharmacies` - Informations sur les pharmacies
+- `opening_hours` - Horaires d'ouverture des pharmacies
+- `duty_schedules` - Plannings de garde des pharmacies
+- `medicines` - Catalogue de médicaments
+- `pharmacy_medicines` - Stock de médicaments par pharmacie
+- `favorites` - Favoris des utilisateurs
+- `reports` - Signalements d'erreurs
+- `reservations` - Réservations de médicaments
+
+## Règles de Gestion
+
+1. Une pharmacie est ouverte si l'heure actuelle est dans ses horaires habituels OU si elle est de garde à cette date.
+2. Seul un pharmacien validé par l'admin peut publier sa fiche et son stock.
+3. Un pharmacien ne modifie que le stock de sa propre pharmacie.
+4. Un stock non mis à jour depuis plus de 48 h est marqué "à confirmer".
+5. Les infos sont indicatives : toujours inviter à appeler la pharmacie.
+6. Un signalement validé par l'admin abaisse la fiabilité de la ligne concernée.
+7. La recherche de médicament ne demande aucun compte.
+8. Les distances sont calculées à vol d'oiseau (Haversine).
+9. La position de l'utilisateur n'est jamais stockée.
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Veuillez créer une branche par fonctionnalité (feature/pX-nom) et une pull request avec une description.
+
+## Licence
+
+Ce projet est sous licence MIT.
