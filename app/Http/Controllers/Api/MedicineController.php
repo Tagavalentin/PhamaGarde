@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Medicine;
 use App\Models\PharmacyMedicine;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class MedicineController extends Controller
 {
@@ -65,7 +65,7 @@ class MedicineController extends Controller
                 $distance = $this->calculateDistance($lat, $lng, $pharmacy->latitude, $pharmacy->longitude);
             }
 
-            $updatedAt = $pm->updated_at;
+            $updatedAt = is_string($pm->updated_at) ? Carbon::parse($pm->updated_at) : $pm->updated_at;
             $aConfirmer = $updatedAt->diffInHours($now) > 48;
 
             $results[] = [
@@ -80,7 +80,7 @@ class MedicineController extends Controller
                 'statut_stock' => $pm->statut,
                 'quantite' => $pm->quantite,
                 'prix' => $pm->prix,
-                'updated_at' => $pm->updated_at->toISOString(),
+                'updated_at' => (string) $pm->updated_at,
                 'a_confirmer' => $aConfirmer,
                 'distance_km' => $distance,
                 'statut_ouverture' => $pharmacy->getStatus(),

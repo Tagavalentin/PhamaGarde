@@ -47,7 +47,7 @@ const selectMedicine = (medicine) => {
     showSuggestions.value = false;
     searchQuery.value = '';
     suggestions.value = [];
-    router.push(`/disponibilite/${medicine.id}`);
+    router.push(`/medicaments/${medicine.id}`);
 };
 
 const handleKeyDown = (event) => {
