@@ -11,6 +11,7 @@ Route::prefix('pharma')->group(function () {
 
     Route::get('/pharmacies', [PharmacyController::class, 'index']);
     Route::get('/medicines', [MedicineController::class, 'index'])->middleware('throttle:60,1');
+    Route::get('/medicines/{id}/availability', [MedicineController::class, 'availability']);
 
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout']);
