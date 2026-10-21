@@ -25,6 +25,7 @@ class PharmacyResource extends JsonResource
             'longitude' => (float) $this->longitude,
             'telephone' => $this->telephone,
             'statut' => $this->getStatus(Carbon::now('Africa/Lome')),
+            'distance_km' => $this->distance_km ?? null,
         ];
     }
 }
