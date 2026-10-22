@@ -41,6 +41,7 @@ Route::prefix('pharma')->group(function () {
             Route::get('/admin/pharmacies/pending', [AdminController::class, 'pendingPharmacies']);
             Route::post('/admin/pharmacies/{id}/approve', [AdminController::class, 'approvePharmacy']);
             Route::post('/admin/pharmacies/{id}/reject', [AdminController::class, 'rejectPharmacy']);
+            Route::post('/admin/medicines/import', [AdminController::class, 'importMedicines']);
         });
     });
 });

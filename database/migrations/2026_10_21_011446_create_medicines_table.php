@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nom_commercial')->index();
             $table->string('dci')->index();
-            $table->string('forme');
-            $table->string('dosage');
-            $table->string('categorie');
+            $table->string('forme')->nullable();
+            $table->string('dosage')->nullable();
+            $table->string('categorie')->nullable();
+            $table->unique(['nom_commercial', 'dosage', 'forme']);
             $table->timestamps();
         });
     }

@@ -30,6 +30,10 @@ Route::get('/admin/demandes', function () {
     return inertia('AdminDemandes');
 })->name('admin.demandes');
 
+Route::get('/admin/catalogue', function () {
+    return inertia('AdminCatalogue');
+})->name('admin.catalogue');
+
 Route::get('/carte', function () {
     return inertia('Carte');
 })->name('carte');

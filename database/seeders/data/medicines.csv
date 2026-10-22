@@ -1,0 +1,208 @@
+nom_commercial,dci,forme,dosage,categorie
+PARACETAMOL,PARACETAMOL,Comprimé,500 mg,Analgésique
+PARACETAMOL,PARACETAMOL,Sirop,125 mg/5 ml,Analgésique
+IBUPROFENE,IBUPROFENE,Comprimé,400 mg,Analgésique
+IBUPROFENE,IBUPROFENE,Sirop,100 mg/5 ml,Analgésique
+AMOXICILLINE,AMOXICILLINE,Comprimé,500 mg,Antibiotique
+AMOXICILLINE,AMOXICILLINE,Suspension,250 mg/5 ml,Antibiotique
+ARTESUNATE,ARTESUNATE,Comprimé,50 mg,Antipaludique
+ARTESUNATE,ARTESUNATE,Injectable,60 mg,Antipaludique
+LUMEFANTRINE,LUMEFANTRINE,Comprimé,120 mg,Antipaludique
+ARTEMETHER,ARTEMETHER,Comprimé,20 mg,Antipaludique
+METRONIDAZOLE,METRONIDAZOLE,Comprimé,500 mg,Antibiotique
+METRONIDAZOLE,METRONIDAZOLE,Sirop,125 mg/5 ml,Antibiotique
+CIPROFLOXACINE,CIPROFLOXACINE,Comprimé,500 mg,Antibiotique
+CIPROFLOXACINE,CIPROFLOXACINE,Solution,5 mg/ml,Antibiotique
+AZITHROMYCINE,AZITHROMYCINE,Comprimé,250 mg,Antibiotique
+AZITHROMYCINE,AZITHROMYCINE,Suspension,200 mg/5 ml,Antibiotique
+DOXYCYCLINE,DOXYCYCLINE,Comprimé,100 mg,Antibiotique
+DOXYCYCLINE,DOXYCYCLINE,Capsule,100 mg,Antibiotique
+CEFTRIAXONE,CEFTRIAXONE,Injectable,1 g,Antibiotique
+CEFTRIAXONE,CEFTRIAXONE,Injectable,500 mg,Antibiotique
+OMEPRAZOLE,OMEPRAZOLE,Comprimé,20 mg,Antiulcéreux
+OMEPRAZOLE,OMEPRAZOLE,Capsule,20 mg,Antiulcéreux
+RANITIDINE,RANITIDINE,Comprimé,150 mg,Antiulcéreux
+RANITIDINE,RANITIDINE,Sirop,75 mg/5 ml,Antiulcéreux
+SOLUTION DE REHYDRATATION ORALE,,Sachet,Electrolytes,Réhydratation
+SOLUTION DE REHYDRATATION ORALE,,Sachet,13.8 g,Réhydratation
+ZINC SULFATE,ZINC,Comprimé,20 mg,Supplément
+ZINC SULFATE,ZINC,Sirop,10 mg/5 ml,Supplément
+VITAMINE A,VITAMINE A,Capsule,200000 UI,Vitamine
+VITAMINE C,ACIDE ASCORBIQUE,Comprimé,500 mg,Vitamine
+VITAMINE C,ACIDE ASCORBIQUE,Injectable,1 g,Vitamine
+FER SULFATE,FER,Comprimé,200 mg,Supplément
+FER SULFATE,FER,Sirop,30 mg/5 ml,Supplément
+ACIDE FOLIQUE,ACIDE FOLIQUE,Comprimé,5 mg,Vitamine
+ACIDE FOLIQUE,ACIDE FOLIQUE,Comprimé,400 mcg,Vitamine
+DIAZEPAM,DIAZEPAM,Comprimé,5 mg,Sédatif
+DIAZEPAM,DIAZEPAM,Injectable,10 mg,Sédatif
+DIPHENHYDRAMINE,DIPHENHYDRAMINE,Comprimé,25 mg,Antihistaminique
+DIPHENHYDRAMINE,DIPHENHYDRAMINE,Sirop,12.5 mg/5 ml,Antihistaminique
+LORATADINE,LORATADINE,Comprimé,10 mg,Antihistaminique
+LORATADINE,LORATADINE,Sirop,5 mg/5 ml,Antihistaminique
+CETIRIZINE,CETIRIZINE,Comprimé,10 mg,Antihistaminique
+CETIRIZINE,CETIRIZINE,Sirop,5 mg/5 ml,Antihistaminique
+SALBUTAMOL,SALBUTAMOL,Aérosol,100 mcg,Bronchodilatateur
+SALBUTAMOL,SALBUTAMOL,Sirop,2 mg/5 ml,Bronchodilatateur
+BUDESONIDE,BUDESONIDE,Aérosol,200 mcg,Antiasthmatique
+BUDESONIDE,BUDESONIDE,Suspension,0.5 mg/2 ml,Antiasthmatique
+PREDNISONE,PREDNISONE,Comprimé,5 mg,Corticoïde
+PREDNISONE,PREDNISONE,Comprimé,20 mg,Corticoïde
+DICLOFENAC,DICLOFENAC,Comprimé,50 mg,Analgésique
+DICLOFENAC,DICLOFENAC,Gel,1%,Analgésique
+TRAMADOL,TRAMADOL,Comprimé,50 mg,Analgésique
+TRAMADOL,TRAMADOL,Injectable,100 mg,Analgésique
+MORPHINE,MORPHINE,Injectable,10 mg,Analgésique
+MORPHINE,MORPHINE,Comprimé,10 mg,Analgésique
+INSULINE,INSULINE HUMAINE,Injectable,100 UI/ml,Antidiabétique
+METFORMINE,METFORMINE,Comprimé,500 mg,Antidiabétique
+METFORMINE,METFORMINE,Comprimé,850 mg,Antidiabétique
+GLIBENCLAMIDE,GLIBENCLAMIDE,Comprimé,5 mg,Antidiabétique
+ENALAPRIL,ENALAPRIL,Comprimé,5 mg,Antihypertenseur
+ENALAPRIL,ENALAPRIL,Comprimé,10 mg,Antihypertenseur
+AMLODIPINE,AMLODIPINE,Comprimé,5 mg,Antihypertenseur
+AMLODIPINE,AMLODIPINE,Comprimé,10 mg,Antihypertenseur
+LOSARTAN,LOSARTAN,Comprimé,50 mg,Antihypertenseur
+HYDROCHLOROTHIAZIDE,HYDROCHLOROTHIAZIDE,Comprimé,25 mg,Diurétique
+FUROSEMIDE,FUROSEMIDE,Comprimé,40 mg,Diurétique
+FUROSEMIDE,FUROSEMIDE,Injectable,20 mg,Diurétique
+SPIRONOLACTONE,SPIRONOLACTONE,Comprimé,25 mg,Diurétique
+DIGOXINE,DIGOXINE,Comprimé,0.25 mg,Cardiotonique
+DIGOXINE,DIGOXINE,Injectable,0.25 mg,Cardiotonique
+ASPIRINE,ACIDE ACETYLSALICYLIQUE,Comprimé,100 mg,Antiagrégant
+ASPIRINE,ACIDE ACETYLSALICYLIQUE,Comprimé,500 mg,Analgésique
+CLOPIDOGREL,CLOPIDOGREL,Comprimé,75 mg,Antiagrégant
+WARFARINE,WARFARINE,Comprimé,5 mg,Anticoagulant
+ATORVASTATINE,ATORVASTATINE,Comprimé,10 mg,Hypolipémiant
+ATORVASTATINE,ATORVASTATINE,Comprimé,20 mg,Hypolipémiant
+SIMVASTATINE,SIMVASTATINE,Comprimé,20 mg,Hypolipémiant
+SIMVASTATINE,SIMVASTATINE,Comprimé,40 mg,Hypolipémiant
+LEVOTHYROXINE,LEVOTHYROXINE,Comprimé,50 mcg,Hormone thyroïdienne
+LEVOTHYROXINE,LEVOTHYROXINE,Comprimé,100 mcg,Hormone thyroïdienne
+CARBAMAZEPINE,CARBAMAZEPINE,Comprimé,200 mg,Antiépileptique
+CARBAMAZEPINE,CARBAMAZEPINE,Sirop,100 mg/5 ml,Antiépileptique
+PHENYTOINE,PHENYTOINE,Comprimé,100 mg,Antiépileptique
+VALPROATE DE SODIUM,VALPROATE DE SODIUM,Comprimé,500 mg,Antiépileptique
+LEVETIRACETAM,LEVETIRACETAM,Comprimé,500 mg,Antiépileptique
+FLUCONAZOLE,FLUCONAZOLE,Comprimé,150 mg,Antifongique
+FLUCONAZOLE,FLUCONAZOLE,Suspension,50 mg/5 ml,Antifongique
+MICONAZOLE,MICONAZOLE,Crème,2%,Antifongique
+MICONAZOLE,MICONAZOLE,Spray,1%,Antifongique
+NISTATINE,NISTATINE,Suspension,100000 UI/ml,Antifongique
+ACYCLOVIR,ACYCLOVIR,Comprimé,200 mg,Antiviral
+ACYCLOVIR,ACYCLOVIR,Crème,5%,Antiviral
+CLARITHROMYCINE,CLARITHROMYCINE,Comprimé,250 mg,Antibiotique
+CLARITHROMYCINE,CLARITHROMYCINE,Suspension,125 mg/5 ml,Antibiotique
+ERYTHROMYCINE,ERYTHROMYCINE,Comprimé,250 mg,Antibiotique
+ERYTHROMYCINE,ERYTHROMYCINE,Sirop,125 mg/5 ml,Antibiotique
+GENTAMICINE,GENTAMICINE,Injectable,80 mg,Antibiotique
+GENTAMICINE,GENTAMICINE,Collyre,0.3%,Antibiotique
+CHLORAMPHENICOL,CHLORAMPHENICOL,Collyre,0.5%,Antibiotique
+TETRACYCLINE,TETRACYCLINE,Pommade,1%,Antibiotique
+MUPROCINE,MUPROCINE,Pommade,2%,Antibiotique
+BETAMETHASONE,BETAMETHASONE,Crème,0.1%,Corticoïde
+BETAMETHASONE,BETAMETHASONE,Injectable,4 mg,Corticoïde
+HYDROCORTISONE,HYDROCORTISONE,Crème,1%,Corticoïde
+HYDROCORTISONE,HYDROCORTISONE,Injectable,100 mg,Corticoïde
+CALCIUM,CALCIUM,Comprimé,500 mg,Supplément
+CALCIUM,CALCIUM,Sirop,100 mg/5 ml,Supplément
+MAGNESIUM,MAGNESIUM,Comprimé,250 mg,Supplément
+POTASSIUM,POTASSIUM,Comprimé,600 mg,Supplément
+POTASSIUM,POTASSIUM,Sirop,40 meq/15 ml,Supplément
+ALBENDAZOLE,ALBENDAZOLE,Comprimé,400 mg,Anthelminthique
+MEBENDAZOLE,MEBENDAZOLE,Comprimé,100 mg,Anthelminthique
+IVERMECTINE,IVERMECTINE,Comprimé,3 mg,Anthelminthique
+PRAZIQUANTEL,PRAZIQUANTEL,Comprimé,600 mg,Anthelminthique
+ARTESUNATE+AMODIAQUINE,ARTESUNATE+AMODIAQUINE,Comprimé,50/270 mg,Antipaludique
+QUININE,QUININE,Comprimé,500 mg,Antipaludique
+QUININE,QUININE,Injectable,500 mg,Antipaludique
+PRIMAQUINE,PRIMAQUINE,Comprimé,15 mg,Antipaludique
+CLOROQUINE,CLOROQUINE,Comprimé,250 mg,Antipaludique
+CLOROQUINE,CLOROQUINE,Sirop,50 mg/5 ml,Antipaludique
+PROGUANIL,PROGUANIL,Comprimé,100 mg,Antipaludique
+SULFADOXINE+PYRIMETHAMINE,SULFADOXINE+PYRIMETHAMINE,Comprimé,500/25 mg,Antipaludique
+PENTAMIDINE,PENTAMIDINE,Injectable,300 mg,Antiprotozoaire
+MELARSOPROL,MELARSOPROL,Injectable,3.6%,Antiprotozoaire
+SURAMINE,SURAMINE,Injectable,1 g,Antiprotozoaire
+ISONIAZIDE,ISONIAZIDE,Comprimé,100 mg,Antituberculeux
+ISONIAZIDE,ISONIAZIDE,Sirop,50 mg/5 ml,Antituberculeux
+RIFAMPICINE,RIFAMPICINE,Capsule,300 mg,Antituberculeux
+RIFAMPICINE,RIFAMPICINE,Sirop,100 mg/5 ml,Antituberculeux
+ETHAMBUTOL,ETHAMBUTOL,Comprimé,400 mg,Antituberculeux
+PYRAZINAMIDE,PYRAZINAMIDE,Comprimé,500 mg,Antituberculeux
+STREPTOMYCINE,STREPTOMYCINE,Injectable,1 g,Antituberculeux
+NEVIRAPINE,NEVIRAPINE,Comprimé,200 mg,Antirétroviral
+ZIDOVUDINE,ZIDOVUDINE,Comprimé,300 mg,Antirétroviral
+LAMIVUDINE,LAMIVUDINE,Comprimé,150 mg,Antirétroviral
+TENOFOVIR,TENOFOVIR,Comprimé,300 mg,Antirétroviral
+EFAVIRENZ,EFAVIRENZ,Comprimé,600 mg,Antirétroviral
+LOPINAVIR+RITONAVIR,LOPINAVIR+RITONAVIR,Comprimé,200/50 mg,Antirétroviral
+EMTRICITABINE+TENOFOVIR,EMTRICITABINE+TENOFOVIR,Comprimé,200/300 mg,Antirétroviral
+HALOPERIDOL,HALOPERIDOL,Comprimé,1 mg,Neuroleptique
+HALOPERIDOL,HALOPERIDOL,Injectable,5 mg,Neuroleptique
+RISPERIDONE,RISPERIDONE,Comprimé,1 mg,Neuroleptique
+RISPERIDONE,RISPERIDONE,Sirop,1 mg/ml,Neuroleptique
+OLANZAPINE,OLANZAPINE,Comprimé,5 mg,Neuroleptique
+OLANZAPINE,OLANZAPINE,Comprimé,10 mg,Neuroleptique
+FLUOXETINE,FLUOXETINE,Comprimé,20 mg,Antidépresseur
+FLUOXETINE,FLUOXETINE,Capsule,20 mg,Antidépresseur
+SERTRALINE,SERTRALINE,Comprimé,50 mg,Antidépresseur
+SERTRALINE,SERTRALINE,Comprimé,100 mg,Antidépresseur
+AMITRIPTYLINE,AMITRIPTYLINE,Comprimé,25 mg,Antidépresseur
+AMITRIPTYLINE,AMITRIPTYLINE,Comprimé,50 mg,Antidépresseur
+CLONAZEPAM,CLONAZEPAM,Comprimé,0.5 mg,Anxiolytique
+CLONAZEPAM,CLONAZEPAM,Comprimé,2 mg,Anxiolytique
+ALPRAZOLAM,ALPRAZOLAM,Comprimé,0.25 mg,Anxiolytique
+ALPRAZOLAM,ALPRAZOLAM,Comprimé,0.5 mg,Anxiolytique
+BUSPIRONE,BUSPIRONE,Comprimé,5 mg,Anxiolytique
+BUSPIRONE,BUSPIRONE,Comprimé,10 mg,Anxiolytique
+DULOXETINE,DULOXETINE,Capsule,30 mg,Antidépresseur
+DULOXETINE,DULOXETINE,Capsule,60 mg,Antidépresseur
+VENLAFAXINE,VENLAFAXINE,Comprimé,37.5 mg,Antidépresseur
+VENLAFAXINE,VENLAFAXINE,Comprimé,75 mg,Antidépresseur
+MIRTAZAPINE,MIRTAZAPINE,Comprimé,15 mg,Antidépresseur
+MIRTAZAPINE,MIRTAZAPINE,Comprimé,30 mg,Antidépresseur
+BUPROPION,BUPROPION,Comprimé,150 mg,Antidépresseur
+BUPROPION,BUPROPION,Comprimé,300 mg,Antidépresseur
+ESCITALOPRAM,ESCITALOPRAM,Comprimé,10 mg,Antidépresseur
+ESCITALOPRAM,ESCITALOPRAM,Comprimé,20 mg,Antidépresseur
+TIZANIDINE,TIZANIDINE,Comprimé,2 mg,Myorelaxant
+TIZANIDINE,TIZANIDINE,Comprimé,4 mg,Myorelaxant
+BACLOFENE,BACLOFENE,Comprimé,10 mg,Myorelaxant
+BACLOFENE,BACLOFENE,Comprimé,25 mg,Myorelaxant
+CYCLOBENZAPRINE,CYCLOBENZAPRINE,Comprimé,5 mg,Myorelaxant
+CYCLOBENZAPRINE,CYCLOBENZAPRINE,Comprimé,10 mg,Myorelaxant
+METHYLPHENIDATE,METHYLPHENIDATE,Comprimé,10 mg,Stimulant
+METHYLPHENIDATE,METHYLPHENIDATE,Comprimé,18 mg,Stimulant
+MODAFINIL,MODAFINIL,Comprimé,100 mg,Stimulant
+ATOMOXETINE,ATOMOXETINE,Capsule,18 mg,Stimulant
+ATOMOXETINE,ATOMOXETINE,Capsule,40 mg,Stimulant
+DONEPEZIL,DONEPEZIL,Comprimé,5 mg,Alzheimer
+DONEPEZIL,DONEPEZIL,Comprimé,10 mg,Alzheimer
+RIVASTIGMINE,RIVASTIGMINE,Capsule,1.5 mg,Alzheimer
+RIVASTIGMINE,RIVASTIGMINE,Capsule,3 mg,Alzheimer
+MEMANTINE,MEMANTINE,Comprimé,5 mg,Alzheimer
+MEMANTINE,MEMANTINE,Comprimé,10 mg,Alzheimer
+SILDENAFIL,SILDENAFIL,Comprimé,25 mg,Dysfonction érectile
+SILDENAFIL,SILDENAFIL,Comprimé,50 mg,Dysfonction érectile
+SILDENAFIL,SILDENAFIL,Comprimé,100 mg,Dysfonction érectile
+TADALAFIL,TADALAFIL,Comprimé,5 mg,Dysfonction érectile
+TADALAFIL,TADALAFIL,Comprimé,20 mg,Dysfonction érectile
+FINASTERIDE,FINASTERIDE,Comprimé,1 mg,Hyperplasie bénigne
+FINASTERIDE,FINASTERIDE,Comprimé,5 mg,Hyperplasie bénigne
+TAMSULOSINE,TAMSULOSINE,Capsule,0.4 mg,Hyperplasie bénigne
+TAMSULOSINE,TAMSULOSINE,Capsule,0.8 mg,Hyperplasie bénigne
+ALFUZOSINE,ALFUZOSINE,Comprimé,10 mg,Hyperplasie bénigne
+TERAZOSINE,TERAZOSINE,Comprimé,1 mg,Hyperplasie bénigne
+TERAZOSINE,TERAZOSINE,Comprimé,2 mg,Hyperplasie bénigne
+DUTASTERIDE,DUTASTERIDE,Capsule,0.5 mg,Hyperplasie bénigne
+DUTASTERIDE,DUTASTERIDE,Capsule,0.5 mg,Alopécie
+MIFEPRESTONE,MIFEPRESTONE,Comprimé,200 mg,Avortement
+MISOPROSTOL,MISOPROSTOL,Comprimé,200 mcg,Ulcère
+MISOPROSTOL,MISOPROSTOL,Comprimé,200 mcg,Avortement
+LEVONORGESTREL,LEVONORGESTREL,Comprimé,1.5 mg,Contraception
+LEVONORGESTREL,LEVONORGESTREL,Implant,52 mg,Contraception
+ETHINYLESTRADIOL+LEVONORGESTREL,ETHINYLESTRADIOL+LEVONORGESTREL,Comprimé,30/150 mcg,Contraception
+ETHINYLESTRADIOL+LEVONORGESTREL,ETHINYLESTRADIOL+LEVONORGESTREL,Comprimé,20/100 mcg,Contraception
+MÉDROXYPROGESTÉRONE,MÉDROXYPROGESTÉRONE,Comprimé,10 mg,Contraception
+NORETHISTÉRONE,NORETHISTÉRONE,Comprimé,5 mg,Contraception
