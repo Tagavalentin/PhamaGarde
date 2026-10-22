@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AdminController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\MedicineController;
 use App\Http\Controllers\Api\PharmacyController;
+use App\Http\Controllers\Api\StockController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('pharma')->group(function () {
@@ -18,6 +19,13 @@ Route::prefix('pharma')->group(function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout']);
         Route::get('/me', [AuthController::class, 'me']);
+
+        // Pharmacist stock routes
+        Route::middleware('validated.pharmacist')->group(function () {
+            Route::get('/my-pharmacy/stock', [StockController::class, 'index']);
+            Route::put('/my-pharmacy/stock/{medicine_id}', [StockController::class, 'update']);
+            Route::delete('/my-pharmacy/stock/{medicine_id}', [StockController::class, 'destroy']);
+        });
 
         // Admin routes
         Route::middleware('role:admin')->group(function () {
