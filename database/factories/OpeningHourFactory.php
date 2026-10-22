@@ -19,7 +19,7 @@ class OpeningHourFactory extends Factory
     {
         return [
             'pharmacy_id' => null,
-            'jour_semaine' => fake()->randomElement(['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']),
+            'jour_semaine' => fake()->numberBetween(1, 7),
             'heure_ouverture' => fake()->time('H:i'),
             'heure_fermeture' => fake()->time('H:i'),
         ];

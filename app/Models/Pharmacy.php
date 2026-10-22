@@ -113,18 +113,11 @@ class Pharmacy extends Model
         return 'ferme';
     }
 
-    private function getDayOfWeek(Carbon $date): string
+    private function getDayOfWeek(Carbon $date): int
     {
-        $days = [
-            0 => 'dimanche',
-            1 => 'lundi',
-            2 => 'mardi',
-            3 => 'mercredi',
-            4 => 'jeudi',
-            5 => 'vendredi',
-            6 => 'samedi',
-        ];
-
-        return $days[$date->dayOfWeek];
+        // Carbon dayOfWeek: 0 (Sunday) to 6 (Saturday)
+        // Convert to 1 (Monday) to 7 (Sunday)
+        $carbonDay = $date->dayOfWeek;
+        return $carbonDay === 0 ? 7 : $carbonDay;
     }
 }

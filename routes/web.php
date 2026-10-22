@@ -18,6 +18,14 @@ Route::get('/mon-stock', function () {
     return inertia('MonStock');
 })->name('stock.index');
 
+Route::get('/mes-horaires', function () {
+    return inertia('MesHoraires');
+})->name('schedule.hours');
+
+Route::get('/mes-gardes', function () {
+    return inertia('MesGardes');
+})->name('schedule.duties');
+
 Route::get('/admin/demandes', function () {
     return inertia('AdminDemandes');
 })->name('admin.demandes');

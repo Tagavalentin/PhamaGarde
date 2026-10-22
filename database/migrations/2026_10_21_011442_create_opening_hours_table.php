@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('opening_hours', function (Blueprint $table) {
             $table->id();
             $table->foreignId('pharmacy_id')->constrained()->onDelete('cascade');
-            $table->enum('jour_semaine', ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']);
-            $table->time('heure_ouverture');
-            $table->time('heure_fermeture');
+            $table->integer('jour_semaine')->check('jour_semaine >= 1 AND jour_semaine <= 7');
+            $table->time('heure_ouverture')->nullable();
+            $table->time('heure_fermeture')->nullable();
             $table->timestamps();
         });
     }
